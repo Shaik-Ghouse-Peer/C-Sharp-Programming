@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcademicLibrary
 {
-    class Program : LibraryDatabase
+    class AcademicLibrary : LibraryDatabase
     {
         public override bool DisplayBooksInLibrary()
         {
@@ -21,10 +21,11 @@ namespace AcademicLibrary
                 {
                     int book_index = 1;
                     Console.WriteLine("{0}-{1}", book_index, book.name);
+                    book_index++;
                 }
                 Console.WriteLine("---------------------------------------");
                 return true;
-            }          
+            }
         }
         public dynamic CreateNewBook()
         {
@@ -47,9 +48,12 @@ namespace AcademicLibrary
 
             return new_book;
         }
+    }
+    class Program
+    {
         static void Main()
         {
-            dynamic academic_library = new Program();
+            dynamic academic_library = new AcademicLibrary();
             dynamic librarian_shaik = new Librarian();
 
             string menu_option;
