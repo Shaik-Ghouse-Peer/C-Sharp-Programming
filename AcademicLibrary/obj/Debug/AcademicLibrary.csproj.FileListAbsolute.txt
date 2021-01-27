@@ -1,0 +1,14 @@
+C:\Users\shaik.g.peer\source\repos\AcademicLibrary\bin\Debug\AcademicLibrary.exe.config
+C:\Users\shaik.g.peer\source\repos\AcademicLibrary\bin\Debug\AcademicLibrary.exe
+C:\Users\shaik.g.peer\source\repos\AcademicLibrary\bin\Debug\AcademicLibrary.pdb
+C:\Users\shaik.g.peer\source\repos\AcademicLibrary\obj\Debug\AcademicLibrary.csprojAssemblyReference.cache
+C:\Users\shaik.g.peer\source\repos\AcademicLibrary\obj\Debug\AcademicLibrary.csproj.CoreCompileInputs.cache
+C:\Users\shaik.g.peer\source\repos\AcademicLibrary\obj\Debug\AcademicLibrary.exe
+C:\Users\shaik.g.peer\source\repos\AcademicLibrary\obj\Debug\AcademicLibrary.pdb
+C:\Users\shaik.g.peer\Desktop\review_folder\C-Sharp-Programming\AcademicLibrary\bin\Debug\AcademicLibrary.exe.config
+C:\Users\shaik.g.peer\Desktop\review_folder\C-Sharp-Programming\AcademicLibrary\bin\Debug\AcademicLibrary.exe
+C:\Users\shaik.g.peer\Desktop\review_folder\C-Sharp-Programming\AcademicLibrary\bin\Debug\AcademicLibrary.pdb
+C:\Users\shaik.g.peer\Desktop\review_folder\C-Sharp-Programming\AcademicLibrary\obj\Debug\AcademicLibrary.csprojAssemblyReference.cache
+C:\Users\shaik.g.peer\Desktop\review_folder\C-Sharp-Programming\AcademicLibrary\obj\Debug\AcademicLibrary.csproj.CoreCompileInputs.cache
+C:\Users\shaik.g.peer\Desktop\review_folder\C-Sharp-Programming\AcademicLibrary\obj\Debug\AcademicLibrary.exe
+C:\Users\shaik.g.peer\Desktop\review_folder\C-Sharp-Programming\AcademicLibrary\obj\Debug\AcademicLibrary.pdb
