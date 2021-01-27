@@ -8,14 +8,16 @@ namespace AcademicLibrary
 {
     abstract class LibraryDatabase   
     {
-        public dynamic books_rake, recently_added_book;
+        public List<Book> books_rake;
+        public dynamic recently_added_book;
         public int total_books_available;
  
         public LibraryDatabase()
         {
-            this.books_rake = new List<dynamic>();
+            this.books_rake = new List<Book>();
             this.total_books_available = 0;
         }
+
         abstract public bool DisplayBooksInLibrary();
     }
 }

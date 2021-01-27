@@ -17,9 +17,9 @@ namespace AcademicLibrary
             else
             {
                 Console.WriteLine("------------Books Available------------");
+                int book_index = 1;
                 foreach (dynamic book in this.books_rake)
-                {
-                    int book_index = 1;
+                {     
                     Console.WriteLine("{0}-{1}", book_index, book.name);
                     book_index++;
                 }
@@ -27,7 +27,7 @@ namespace AcademicLibrary
                 return true;
             }
         }
-        public dynamic CreateNewBook()
+        public Book CreateNewBook()
         {
             string book_name, author_name, category;
             int price;
@@ -44,7 +44,7 @@ namespace AcademicLibrary
             Console.WriteLine("Enter Book Price : ");
             price = Convert.ToInt32(Console.ReadLine());
 
-            var new_book = new Book(book_name, author_name, category, price);
+            Book new_book = new Book(book_name, author_name, category, price);
 
             return new_book;
         }
@@ -53,8 +53,8 @@ namespace AcademicLibrary
     {
         static void Main()
         {
-            dynamic academic_library = new AcademicLibrary();
-            dynamic librarian_shaik = new Librarian();
+            AcademicLibrary academic_library = new AcademicLibrary();
+            Librarian librarian_shaik = new Librarian();
 
             string menu_option;
             while (true)
@@ -75,7 +75,7 @@ namespace AcademicLibrary
                         }
                         break;
                     case "2":
-                        var new_book = academic_library.CreateNewBook();
+                        Book new_book = academic_library.CreateNewBook();
 
                         if (librarian_shaik.AddBook(academic_library, new_book) == true)
                         {
@@ -92,7 +92,7 @@ namespace AcademicLibrary
                         break;
                     case "3":
                         Console.WriteLine("Enter the Book Name To Delete : ");
-                        var book_name = Console.ReadLine();
+                        string book_name = Console.ReadLine();
 
                         if (librarian_shaik.DeleteBook(academic_library, book_name) == true)
                         {

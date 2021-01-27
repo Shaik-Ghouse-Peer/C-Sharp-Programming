@@ -8,10 +8,10 @@ namespace AcademicLibrary
 {
     class Book
     {
-        private readonly dynamic author_name, category;
-        public dynamic name;
+        private readonly string author_name, category;
+        public string name;
         public int price;
-        public Book(dynamic name, dynamic author_name, dynamic category, int price)
+        public Book(string name, string author_name, string category, int price)
         {
             this.name = name;
             this.author_name = author_name;

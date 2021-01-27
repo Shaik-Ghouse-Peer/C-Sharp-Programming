@@ -9,14 +9,14 @@ namespace AcademicLibrary
 {
     class Librarian : ILibraryServices
     {
-        public dynamic AddBook(dynamic library, dynamic book)
+        public bool AddBook(AcademicLibrary library, Book book)
         {
             library.books_rake.Add(book);
             library.recently_added_book = book;
 
             return true;
         }
-        public dynamic SearchBook(dynamic library, dynamic book_name)
+        public dynamic SearchBook(AcademicLibrary library, string book_name)
         {
             foreach (dynamic book in library.books_rake)
             {
@@ -27,7 +27,7 @@ namespace AcademicLibrary
             }
             return false;
         }
-        public dynamic DeleteBook(dynamic library, dynamic book_name)
+        public bool DeleteBook(AcademicLibrary library, string book_name)
         {
             var search_result_book = SearchBook(library, book_name);
 
@@ -41,7 +41,7 @@ namespace AcademicLibrary
                 return false;
             }
         }
-        public dynamic DisplayRecentlyAddedBook(dynamic library)
+        public bool DisplayRecentlyAddedBook(AcademicLibrary library)
         {
             if (library.recently_added_book == null || IsBookDeleted(library, library.recently_added_book))
             {
@@ -53,7 +53,7 @@ namespace AcademicLibrary
                 return true;
             }
         }
-        private bool IsBookDeleted(dynamic library, dynamic book)
+        private bool IsBookDeleted(AcademicLibrary library, Book book)
         {
             dynamic search_result = SearchBook(library, book.name);
 

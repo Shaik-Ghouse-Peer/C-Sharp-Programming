@@ -8,9 +8,9 @@ namespace AcademicLibrary
 {
     interface ILibraryServices
     {
-        dynamic AddBook(dynamic library, dynamic book);
-        dynamic DeleteBook(dynamic library, dynamic book);
-        dynamic SearchBook(dynamic library, dynamic book);
-        dynamic DisplayRecentlyAddedBook(dynamic library);
+        bool AddBook(AcademicLibrary library, Book book);
+        bool DeleteBook(AcademicLibrary library, string book_name);
+        dynamic SearchBook(AcademicLibrary library, string book_name);
+        bool DisplayRecentlyAddedBook(AcademicLibrary library);
     }
 }
